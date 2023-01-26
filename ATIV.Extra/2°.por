@@ -1,0 +1,25 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//Escreva um algoritmo que armazene em uma matriz 5x5 todos os números inteiros de 0 a
+		//25. Após isso, o algoritmo deve imprimir todos os valores armazenados em ordem
+	 	//decrescente.
+
+		inteiro M[5][5], X=0
+		  para(inteiro i=0; i < 5; i++){
+			para(inteiro j=0; j < 5; j++){
+   		 	M[i][j]=X++
+		}
+		}
+		para(inteiro i=4; i>=0; i--){
+			para(inteiro j=4; j>=0; j--){
+			escreva("[",M[i][j],"]")
+		}
+		escreva("\n")
+		}
+		
+	 
+	}
+}
