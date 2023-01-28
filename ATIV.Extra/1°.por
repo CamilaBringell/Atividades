@@ -1,48 +1,41 @@
 programa
 {
-  CAMILA B, LETICIA P
-	
-	funcao inicio()
+	função inicio ()
 	{
-		//Crie um algoritmo que leia uma matriz 4X4 de números reais.
-		//Depois, solicite ao usuário,um número referente a uma linha e 
-		//outro referente a uma coluna e imprima o triplo do valorarmazenado nessa posição na matriz, caso este seja par.
+	/*	
+  LETÍCIA PEREIRA E CAMILA BRINGEL
+	1. Crie um algoritmo que leia uma matriz 4X4
+	de números reais. Depois, solicite ao usuário,
+    um número referente a uma linha e outro referente
+    a uma coluna e imprime o triplo do valor
+    armazenada nessa posição na matriz, caso este seja pa */
 
-		inteiro m[4][4], outroC = 0,outroL = 0, triploC = 0, triploL = 0
-
-		para(inteiro i=0; i < 4; i++){
-              para(inteiro j=0; j < 4; j++){
-                escreva("Informe um numero para a linha na posição ",i,":")
-                leia(m[i][j])
-                escreva("\nInforme uma coluna na posição ",j,":")
-                leia(m[j][i])
-		}  
-		}
-		limpa()
-          para(inteiro i=0; i < 4; i++){
-               para(inteiro j=0; j < 4; j++){
-               	se(outroC == m[j][i]){
-               		se(outroC % 2 == 0)
-               		triploC *= 3
-               	}senao{
-               	    escreva("Nao é par")
-               	se(outroL == m[i][j]){
-               		se(outroL % 2 == 0)
-               		triploL *= 3
-               		
-               	}senao{
-               		escreva("Nao é par")
-               	}
+		
+	inteiro m[3][3], n
+	
+	para(inteiro i=0;i<3;i++){
+		para(inteiro j=0;j<3;j++){
+			escreva("Informe o valor da posição ["+i+"]["+j+"]: ")
+			leia(m[i][j])
+	}	
+	}
+	para(inteiro i=0;i<3;i++){
+		para(inteiro j=0;j<3;j++){
 			
-		}
-		}
-		escreva("Informe um numero qualquer para a coluna:")
-		leia(outroC)
-		escreva("Informe um numero qualquer para a linha:")
-		leia(outroL)
-		escreva("O triplo dos numeros são: [",triploC,"][",triploL,"]")
+			escreva("\n")
+			escreva("Informe a linha: ")
+			leia(i)
+			escreva("Informe a coluna: ")
+			leia(j)
+			
+			se(m[i][j]%2==0){
+			escreva("Triplo: "+m[i][j]*3)
+			parear
+
+		    }senao{
+			escreva("O triplo é ímpar")
 		}
 	}
-	
-
+}
+}
 }
